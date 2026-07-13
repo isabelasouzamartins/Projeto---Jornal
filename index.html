@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title> Jornal - Projeto </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="./js/codigos.js"></script>
+</head>
+<body>
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3500">
+                <img src="/images/banners/bannerOfertas.png" class="d-block w-100" alt="oferta até 70%">
+            </div>
+            <div class="carousel-item" data-bs-interval="3500">
+                <img src="/images/banners/bannerOfertas2.png" class="d-block w-100" alt="folia de ofertas">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="secaoVideo">
+        <iframe id="video" src="https://www.youtube.com/embed/WG-XpFOuGso?si=jmbrp9bjYXX3jgfn"
+            title="YouTube video player"></iframe>
+    </div>
+    <div class="secaoClima d-flex justify-content-around align-items-center w-100 mb-5">
+        <img class="imgClima w-25 mt-5 mb-5" alt="sol,frio,chuva" src="images/imgClima.png" />
+        <div id="clima" class="mt-2"></div>
+    </div>
+    <div class="form">
+        <h3 class="title text-align-center"> Sugestões </h3>
+        <textarea placeholder="Escreva aqui" id="deixeComentario" name="deixeComentario" rows="5" cols="45"> </textarea>
+        <button id="enviarComentario" class="btn btn-secondary" type="submit">Deixe seu comentário</button>
+        <div id="ExibirComentarios"></div>
+    </div>
+</body>
+</html>

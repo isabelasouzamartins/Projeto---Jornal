@@ -1,0 +1,74 @@
+:root {
+  --color-black: #212529;
+}
+
+.secaoVideo {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+.secaoVideo #video {
+  max-width: 100%;
+  width: 50%;
+  height: 420px;
+}
+
+.secaoClima {
+  background: #22C1C3;
+  background: linear-gradient(0deg, rgb(34, 193, 195) 17%, rgb(253, 187, 45) 69%);
+}
+.secaoClima #clima {
+  color: var(--color-black);
+  font-style: italic;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+}
+.form ::placeholder {
+  font-weight: 700;
+  color: var(--color-black);
+}
+.form .title {
+  font-size: 30px;
+  font-weight: 700;
+}
+.form #enviarComentario {
+  margin: 20px 0 40px 0;
+}
+.form #ExibirComentarios {
+  width: 80%;
+  margin-bottom: 170px;
+}
+
+@media (max-width: 600px) {
+  .secaoVideo {
+    margin-bottom: 10px;
+  }
+  .secaoVideo #video {
+    width: 80%;
+    height: auto;
+  }
+  .secaoClima {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .secaoClima #clima {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  .form .title {
+    font-size: 20px;
+    padding-bottom: 20px;
+  }
+  .form #enviarComentario {
+    margin: 20px 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

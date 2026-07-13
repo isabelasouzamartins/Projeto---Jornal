@@ -1,0 +1,83 @@
+@use "color";
+
+.secaoVideo {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+
+    #video {
+        max-width: 100%;
+        width: 50%;
+        height: 420px;
+
+    }
+}
+
+.secaoClima {
+    background: #22C1C3;
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 17%, rgba(253, 187, 45, 1) 69%);
+
+    #clima {
+        color: var(--color-black);
+        font-style: italic;
+        font-weight: 600;
+        font-size: 25px;
+    }
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+
+    ::placeholder {
+        font-weight: 700;
+        color: var(--color-black);
+    }
+
+    .title {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    #enviarComentario {
+        margin: 20px 0 40px 0;
+    }
+
+    #ExibirComentarios {
+        width: 80%;
+        margin-bottom: 170px;
+    }
+}
+
+@media (max-width: 600px) {
+    .secaoVideo {
+        margin-bottom: 10px;
+        #video {
+            width: 80%;
+            height: auto;
+        }
+    }
+
+    .secaoClima {
+        flex-direction: column;
+        margin-top: 20px;
+
+        #clima {
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+    }
+
+    .form {
+        .title {
+            font-size: 20px;
+            padding-bottom: 20px;
+        }
+
+        #enviarComentario {
+            margin: 20px 0;
+        }
+    }
+}
