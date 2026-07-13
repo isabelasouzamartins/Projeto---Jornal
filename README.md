@@ -1,5 +1,5 @@
 # Projeto---Jornal
-instalação nodejs:
+# instalação nodejs:
   winget install OpenJS.NodeJS
   fechar o terminal.
 instalação scss:
